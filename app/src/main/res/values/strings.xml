@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Meme Maker</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="meme_template_image">Meme template image</string>
+    <string name="enter_caption">Type Caption To Be Inserted</string>
+    <string name="created_meme">Created Meme</string>
+    <string name="create_meme">Create Meme</string>
+</resources>
