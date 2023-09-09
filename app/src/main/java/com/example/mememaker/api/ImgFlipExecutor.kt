@@ -49,7 +49,7 @@ class ImgFlipExecutor {
                 call: Call<ImgFlipGetMemesResponse>,
                 response: Response<ImgFlipGetMemesResponse>
             ) {
-                //Log.d(TAG, "Response received from ImgFlip get_memes endpoint")
+                Log.d(TAG, "Response received from ImgFlip get_memes endpoint")
 
                 val imgFlipGetMemesResponse: ImgFlipGetMemesResponse? = response.body()
                 val imgFlipGetMemesResponseData: ImgFlipGetMemesResponseData? = imgFlipGetMemesResponse?.data
@@ -58,7 +58,7 @@ class ImgFlipExecutor {
                 memeTemplates = memeTemplates.filterNot {
                     it.url.isBlank()
                 }
-        	//Log.d(TAG, "ImgFlip templates: $memeTemplates")
+        	Log.d(TAG, "ImgFlip templates: $memeTemplates")
                 responseLiveData.value = memeTemplates
             }
         })
